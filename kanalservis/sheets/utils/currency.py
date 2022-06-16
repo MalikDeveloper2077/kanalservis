@@ -5,7 +5,9 @@ import requests
 
 def get_rub_usd_rate():
     """Курс ЦБ РФ"""
-    return requests.get('https://www.cbr-xml-daily.ru/daily_json.js').json()['Valute']['USD']['Value']
+    return requests.get(
+        'https://www.cbr-xml-daily.ru/daily_json.js'
+    ).json()['Valute']['USD']['Value']
 
 
 def from_usd_to_rub(usd_price) -> Union[int, float]:

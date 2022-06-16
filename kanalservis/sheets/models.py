@@ -1,6 +1,6 @@
 from django.db import models
 
-from .utils.orders import from_usd_to_rub
+from .utils.currency import from_usd_to_rub
 
 
 class Order(models.Model):

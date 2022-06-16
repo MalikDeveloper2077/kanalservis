@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': os.environ.get('POSTGRES_NAME', 'postgres'),
         'USER': os.environ.get('POSTGRES_USER', 'postgres'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'postgres'),
-        'HOST': 'localhost',  # 'db'
+        'HOST': 'db',
         'PORT': 5432,
     }
 }
@@ -129,4 +129,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-GOOGLE_CREDENTIALS_FILE = 'plenary-caster-351208-fe61d5b2074d.json'
+GOOGLE_CREDENTIALS_FILE = '/code/kanalservis/plenary-caster-351208-fe61d5b2074d.json'
